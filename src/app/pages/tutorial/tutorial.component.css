@@ -1,0 +1,122 @@
+/* Estilos para la página del tutorial */
+
+/* Definimos la animación */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Aplicamos la animación a los elementos con la clase 'step' */
+.step {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.tutorial {
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.step {
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-register {
+  display: block;
+  gap: 10px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 16px;
+  flex: 1 1 0%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  position: relative;
+  transition: all 0.3s ease 0s;
+
+  font-weight: 600;
+  font-family: Inter, sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-decoration: none;
+  max-width: fit-content !important;
+
+  &:hover {
+    border: 1px solid rgba(255, 255, 255, 0.8);
+  }
+}
+
+.referidos-text {
+  font-family: Inter, sans-serif;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-weight: 400;
+  position: relative;
+}
+
+.btn-send-code {
+  height: 48px;
+  background-color: #001430;
+  color: #FFFFFF;
+  text-align: center;
+  letter-spacing: 0;
+  cursor: pointer;
+  border-radius: 16px;
+  padding: 0 24px;
+  font-weight: 700;
+  line-height: 48px;
+  transition: background-color .3s;
+  border: none;
+
+  &:hover {
+    background-color: rgba(0, 20, 48, .8);
+    color: #FFFFFF;
+  }
+}
+
+.buttons-referido-container {
+  display: flex;
+}
+
+/* Media queries para hacer la página responsive */
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 992px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 700px) {
+  .buttons-referido-container {
+    display: grid !important;
+    & .btn-register {
+      width: 100% !important;
+    }
+  }
+}
