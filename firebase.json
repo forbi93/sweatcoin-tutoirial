@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/tutorial-sweet-coin",
+    "public": "dist/tutorial-sweet-coin/browser",
     "ignore": [
       "firebase.json",
       "**/.*",
